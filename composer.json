@@ -17,7 +17,10 @@
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~4.0",
         "sensio/framework-extra-bundle": "^3.0.2",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "tec/ayt/admin-bundle": "dev-master",
+        "tec/ayt/core-bundle": "dev-master",
+        "tec/ayt/portal-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
@@ -40,6 +43,20 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
         ]
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jplarar/TecAytAdminBundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/jplarar/TecAytCoreBundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/jplarar/TecAytPortalBundle"
+        }
+    ],
     "config": {
         "bin-dir": "bin"
     },
